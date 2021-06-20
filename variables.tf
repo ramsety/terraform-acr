@@ -1,3 +1,9 @@
+variable "RG_NAME" {
+  description = "Value of the environment where acr will be deployed"
+    type = string
+    default = "eval-rg"
+}
+
 variable "environment_name" {
     description = "Value of the environment where acr will be deployed"
     type = string
@@ -13,7 +19,7 @@ variable "container_registry_name" {
 variable "location" {
     description = "Value of the location where container registry to be created"
     type = string
-    default = "eastus"
+    default = "East US"
 }
 
 variable "allowed_subnet_ids" {
