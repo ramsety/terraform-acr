@@ -4,8 +4,6 @@ The following project will deploy the follow resources to the Azure cloud with t
 
 a.) Azure ACR
 
-b.) Azure Key Vault
-
 ## Files
 
 Terraform files : 
