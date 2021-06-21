@@ -11,12 +11,6 @@ variable "ACR_NAME" {
 }
 
 
-variable "KV_NAME" {
-  description = "name of the key vault"
-    type = string
-    default = "eval-acr"
-}
-
 variable "environment_name" {
     description = "Value of the environment where acr will be deployed"
     type = string
