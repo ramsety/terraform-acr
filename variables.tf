@@ -1,7 +1,20 @@
 variable "RG_NAME" {
-  description = "Value of the environment where acr will be deployed"
+  description = "name of the resources group where acr will be deployed"
     type = string
     default = "eval-rg"
+}
+
+variable "ACR_NAME" {
+  description = "name of the acr"
+    type = string
+    default = "eval-acr"
+}
+
+
+variable "KV_NAME" {
+  description = "name of the key vault"
+    type = string
+    default = "eval-acr"
 }
 
 variable "environment_name" {
