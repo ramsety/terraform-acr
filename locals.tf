@@ -9,10 +9,3 @@ locals {
     subnet_id = s
   }]
 }
-
-/*locals {
-  allowed_virtual_networks = [for s in var.allowed_subnet_ids : {
-    action    = "Allow",
-    subnet_id = s
-  }]
-}*/
