@@ -7,7 +7,7 @@ variable "RG_NAME" {
 variable "ACR_NAME" {
   description = "name of the acr"
     type = string
-    default = "evalacr"
+    default = "evalacrmsty01"
 }
 
 
