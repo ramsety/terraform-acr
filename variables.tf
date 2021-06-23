@@ -23,7 +23,7 @@ variable "container_registry_name" {
     default = "test-acr"
 }
 
-variable "location" {
+variable "georeplicated_region_list" {
     description = "Value of the location where container registry to be created"
     type = string
     default = "East US"
