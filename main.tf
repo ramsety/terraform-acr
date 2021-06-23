@@ -13,7 +13,7 @@ provider "azurerm" {
 }
 resource "azurerm_container_registry" "acr" {
   name                     = var.ACR_NAME
-  resource_group_name      = var.RG_NAME
+  resource_group_name      = "eval-rg"
   location                 = "East US"
   sku                      = "Premium"
   admin_enabled            = false
