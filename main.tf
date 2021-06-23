@@ -17,6 +17,6 @@ resource "azurerm_container_registry" "acr" {
   location                 = "East US"
   sku                      = "Premium"
   admin_enabled            = false
-  georeplication_locations = var.georeplicated_region_list
+  georeplication_locations = ["East US", "West Europe"]
  
 }
