@@ -28,9 +28,3 @@ variable "location" {
     type = string
     default = "East US"
 }
-
-variable "allowed_subnet_ids" {
-    description = "Value of the location where container registry to be created"
-    type = list(map)         
-    default = ["10.0.0.0/24","10.1.0.0/24","10.2.0.0/24"]
-}
