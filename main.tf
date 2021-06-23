@@ -5,9 +5,13 @@ backend "azurerm" {
     container_name        = "tfstate"
     key                   = "BXNSxGxwugWitklqE6wOTSe2+PkxGPgNtriZrLgkY6tiwaCzkr/owQS8UUmfoZzSwLK2yJckMXMgXxz0P2qAEw=="
 }
-provider "azurerm" {
-  features {}
-}
+required_providers {
+    azurerm = {
+      # Specify what version of the provider we are going to utilise
+      source = "hashicorp/azurerm"
+      version = ">= 2.4.1"
+    }
+  }
 }
 resource "azurerm_container_registry" "acr" {
   name                     = var.ACR_NAME
