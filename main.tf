@@ -1,3 +1,4 @@
+terraform {
 backend "azurerm" {
     resource_group_name   = var.RG_NAME
     storage_account_name  = "tfstateac"
@@ -17,4 +18,5 @@ network_rule_set {
     default_action  = "Deny"
     virtual_network = local.allowed_virtual_networks
   }  
+}
 }
