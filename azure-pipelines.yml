@@ -29,7 +29,7 @@ jobs:
     inputs:
       command: plan
       environmentServiceNameAzureRM: 03c4c8c9-66a9-42b7-a06e-9a07e2c186f2
-      commandOptions: -input=false -var "RG_NAME=$(TF_VAR_RG_NAME)" "RG_NAME=$(TF_VAR_ACR_NAME)" "RG_NAME=$(TF_VAR_KV_NAME)"
+      commandOptions: -input=false -var="RG_NAME=$(TF_VAR_RG_NAME)" -var="RG_NAME=$(TF_VAR_ACR_NAME)" -var="RG_NAME=$(TF_VAR_KV_NAME)"
 
   - task: TerraformTaskV2@2
     displayName: 'Terraform : VAL & APPLY'
@@ -37,4 +37,4 @@ jobs:
       command: apply
       environmentServiceNameAzureRM: 03c4c8c9-66a9-42b7-a06e-9a07e2c186f2
       backendServiceArm: 03c4c8c9-66a9-42b7-a06e-9a07e2c186f2
-      commandOptions: -input=false -var "RG_NAME=$(TF_VAR_RG_NAME)" "RG_NAME=$(TF_VAR_ACR_NAME)" "RG_NAME=$(TF_VAR_KV_NAME)"
+      commandOptions: -input=false -var="RG_NAME=$(TF_VAR_RG_NAME)" -var="RG_NAME=$(TF_VAR_ACR_NAME)" -var="RG_NAME=$(TF_VAR_KV_NAME)"
