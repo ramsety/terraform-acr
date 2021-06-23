@@ -48,8 +48,8 @@ resource "azurerm_private_endpoint" "rmsty01_pe" {
   subnet_id           = azurerm_subnet.endpoint.id
 
   private_service_connection {
-    name                           = "rmsty01_acr-privateserviceconnection"
-    private_connection_resource_id = azurerm_container_registry.rmsty01_acr.id
+    name                           = "rmsty01acr-privateserviceconnection"
+    private_connection_resource_id = azurerm_container_registry.rmsty01acr.id
     subresource_names              = ["registry"]
     is_manual_connection           = false
   }
