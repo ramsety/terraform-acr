@@ -18,9 +18,5 @@ resource "azurerm_container_registry" "acr" {
   sku                      = "Premium"
   admin_enabled            = false
   georeplication_locations = var.georeplicated_region_list
-
-network_rule_set {
-    default_action  = "Deny"
-    virtual_network = local.allowed_virtual_networks
-  }  
+ 
 }
