@@ -33,8 +33,8 @@ resource "azurerm_subnet" "endpoint" {
   enforce_private_link_endpoint_network_policies = true
 }
 
-resource "azurerm_container_registry" "rmsty01_acr" {
-  name                     = "rmsty01_acr"
+resource "azurerm_container_registry" "rmsty01acr" {
+  name                     = "rmsty01acr"
   resource_group_name      = azurerm_resource_group.rg_rmsty01.name
   location                 = azurerm_resource_group.rg_rmsty01.location
   sku                      = "Premium"
