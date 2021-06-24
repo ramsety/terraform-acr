@@ -24,13 +24,6 @@ resource "azurerm_virtual_network" "rmsty01_vnet01" {
   resource_group_name = azurerm_resource_group.rg-evalrmsty001.name
 }
 
-resource "azurerm_replication" "rmsty01_vnet01" {
-  name                = "rmsty01_vnet01"
- resource_group_name  = azurerm_resource_group.rg-evalrmsty001.name
-  virtual_network_name = azurerm_virtual_network.rmsty01_vnet01.name
-  address_prefix       = "10.0.2.0/24"
-}
-
 resource "azurerm_subnet" "endpoint" {
   name                 = "endpoint"
   resource_group_name  = azurerm_resource_group.rg-evalrmsty001.name
